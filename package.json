@@ -5,7 +5,9 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint **/*.js",
-    "test": "nyc mocha"
+    "test": "nyc mocha",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -28,7 +30,8 @@
     "mocha": "^3.4.1",
     "multimatch": "^2.1.0",
     "nyc": "^10.3.2",
-    "sinon": "^2.3.1"
+    "sinon": "^2.3.1",
+    "snyk": "^1.41.1"
   },
   "devDependencies": {
     "codecov": "^2.2.0",
@@ -45,5 +48,6 @@
       "json"
     ],
     "report-dir": "./test/coverage"
-  }
+  },
+  "snyk": true
 }
