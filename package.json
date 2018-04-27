@@ -31,7 +31,7 @@
     "sinon": "^2.3.1"
   },
   "devDependencies": {
-    "codecov": "^2.2.0",
+    "codecov": "^3.0.1",
     "metalsmith": "^2.3.0",
     "mocha": "^3.4.1",
     "nyc": "^10.3.2",
